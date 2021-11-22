@@ -47,37 +47,50 @@
             nemo non, minima quos totam labore
           </p>
         </div>
-        <div class="contact">
-          <div class="contact-form">
+        <!--calendar booking-->
+      <div class="book">
+        <div class="book-form">
             <form>
-              <div class="row">
-                <div class="input50">
-                  <input type="text" placeholder="Nume" />
-                </div>
-                <div class="input50">
-                  <input type="text" placeholder="Prenume" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="input50">
-                  <input type="text" placeholder="Email" />
-                </div>
-                <div class="input50">
-                  <input type="text" placeholder="Subiect" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="input100">
-                  <textarea placeholder="Mesaj"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input100">
-                  <input type="submit" value="Trimite" />
-                </div>
-              </div>
-            </form>
+          <div class="row">
+              <div class="input50">
+            <label for="checkin-date">Check In: </label>
+            <input type="date" id="chekin-date" />
+        </div>
           </div>
+          <div class="row">
+            <div class="input50">
+            <label for="checkout-date">Check Out: </label>
+            <input type="date" id="chekout-date" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input50">
+            <label for="adult">Adulti: </label>
+            <input type="number" min="1" value="1" id="adult" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input50">
+            <label for="children">Copii: </label>
+            <input type="number" min="1" value="1" id="children" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input50">
+            <label for="rooms">Camere: </label>
+            <input type="number" min="1" value="1" id="rooms" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input50">
+            <input type="submit" class="btn" value="Cauta" />
+            </div>
+          </div>
+        
+    </form>
+</div>
+      
+      <!--end calendar-->
           <div class="contact-info">
             <div class="info-box">
               <img src="imagini/adresa.png" class="contact-icon" alt="" />
@@ -104,6 +117,7 @@
             </div>
           </div>
         </div>
+    </div>
       </section>
   
       <script src="js/script.js"></script>
